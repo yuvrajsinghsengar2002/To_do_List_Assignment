@@ -1,0 +1,26 @@
+/* RegistrationError.css */
+
+.registration_error {
+    text-align: center;
+    padding: 20px;
+}
+
+.registration_error h2 {
+    color: #e74c3c;
+    /* Red color for the error message */
+}
+
+.registration_error p {
+    margin: 10px 0;
+}
+
+.registration_error a {
+    color: #3498db;
+    /* Blue color for the link to registration */
+    text-decoration: none;
+}
+
+.registration_error a:hover {
+    text-decoration: underline;
+    /* Underline the link on hover */
+}

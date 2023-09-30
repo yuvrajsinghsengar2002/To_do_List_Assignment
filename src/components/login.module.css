@@ -1,0 +1,27 @@
+.loginStyle{
+        text-align: center;
+        max-Width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+}
+
+.inputStyle {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+}
+
+.buttonStyle {
+    background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+}
+
