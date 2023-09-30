@@ -8,7 +8,7 @@ const Error = () => {
       <h2>404 Not Found! </h2>
       <p>no page available for corresponding url</p>
       <p>Please check url and try again.</p>
-      <Link to="/">Home</Link>
+      <Link to="/To_Do_List_Assignment/">Home</Link>
     </div>
   );
 };

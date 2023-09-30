@@ -10,10 +10,13 @@ const Home = () => {
       <p>This is the home page of your application.</p>
 
       <div className={classes.auth_links}>
-        <Link to="/signin" className={classes.auth_link}>
+        <Link to="/To_Do_List_Assignment/signin" className={classes.auth_link}>
           Login
         </Link>
-        <Link to="/register" className={classes.auth_link}>
+        <Link
+          to="/To_Do_List_Assignment/register"
+          className={classes.auth_link}
+        >
           Register
         </Link>
       </div>

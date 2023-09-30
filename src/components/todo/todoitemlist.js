@@ -51,7 +51,7 @@ const TodoList = ({authenticatedUser,onLogout}) => {
   const handleLogout=()=>{
    logoutUser();
    onLogout();
-   navigate("/signin");
+   navigate("/To_Do_List_Assignment/signin");
   }
   return (
     <>

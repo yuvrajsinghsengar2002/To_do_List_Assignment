@@ -1,5 +1,5 @@
 import { useEffect,useState } from "react";
-import {  createBrowserRouter,RouterProvider, Routes,Route} from "react-router-dom";
+import {  Routes,Route} from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import './App.css';
 import Login from './components/login';
@@ -33,31 +33,37 @@ function App() {
      <div className="App">
        <Routes>
          <Route
-           path="/"
-           element={authenticatedUser ? <Navigate to="/user" /> : <Home />}
-         ></Route>
-         <Route
-           path="/signin"
+           path="/To_Do_List_Assignment"
            element={
              authenticatedUser ? (
-               <Navigate to="/user" />
+               <Navigate to="/To_Do_List_Assignment/user" />
+             ) : (
+               <Home />
+             )
+           }
+         ></Route>
+         <Route
+           path="/To_Do_List_Assignment/signin"
+           element={
+             authenticatedUser ? (
+               <Navigate to="/To_Do_List_Assignment/user" />
              ) : (
                <Login onLogin={handleLogin} />
              )
            }
          ></Route>
          <Route
-           path="/register"
+           path="/To_Do_List_Assignment/register"
            element={
              authenticatedUser ? (
-               <Navigate to="/user" />
+               <Navigate to="/To_Do_List_Assignment/user" />
              ) : (
                <Registration onRegister={handleLogin} />
              )
            }
          ></Route>
          <Route
-           path="/user"
+           path="/To_Do_List_Assignment/user"
            element={
              authenticatedUser ? (
                <TodoList
@@ -65,14 +71,19 @@ function App() {
                  onLogout={handleLogout}
                />
              ) : (
-               <Navigate to="/signin" />
+               <Navigate to="/To_Do_List_Assignment/signin" />
              )
            }
          ></Route>
-         <Route path="/registererror" element={<RegistrationError />}></Route>
-         <Route path="/loginerror" element={<LoginError/>}></Route>
-         <Route path="*" element={<Error/>}></Route>
-         
+         <Route
+           path="/To_Do_List_Assignment/registererror"
+           element={<RegistrationError />}
+         ></Route>
+         <Route
+           path="/To_Do_List_Assignment/loginerror"
+           element={<LoginError />}
+         ></Route>
+         <Route path="*" element={<Error />}></Route>
        </Routes>
      </div>
    );
